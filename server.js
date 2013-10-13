@@ -1,16 +1,21 @@
 var
   express  = require( 'express' ),
   app      = express(),
-  poet     = require( 'poet' )( app );
+  Poet     = require( 'poet' );
 
 // All default options, but shown for example
+// 
+// 
 
-poet
-  .createPostRoute()
-  .createPageRoute()
-  .createTagRoute()
-  .createCategoryRoute()
-  .init();
+var poet = Poet(app, {
+  posts: './_posts/',
+  postsPerPage: 5,
+  metaFormat: 'json'
+});
+
+poet.init().then(function () {
+  // ready to go!
+});
 
 app.set( 'view engine', 'jade' );
 app.set( 'views', __dirname + '/views' );

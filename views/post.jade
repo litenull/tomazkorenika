@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  - var categoryList = getCategories()
+  - var tagList = getTags()
   div.post
     h1
       a(href=post.url)
@@ -8,6 +10,8 @@ block content
     span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
     div.post.content
       != post.content
+    br(style="clear:both")
+    br
     div.tags
       - each tag in post.tags
         a(href=tagUrl(tag))
