@@ -1,0 +1,34 @@
+!!!
+html
+  head
+    title= 'Tomaz Korenika'
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    script(src='http://code.jquery.com/jquery-2.0.2.min.js')
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          //-img(src='/avatar.png',width='34px', style='float:left; margin-right:10px')
+          a.brand(href='/') tomaz korenika 
+          a.brand(href='/post/projects') projects
+          a.brand(href='/post/aboutme') about me
+    .wrap
+      .container
+        .row
+          .span8
+            block content
+          .span4
+            .well.sidebar-nav
+              ul.nav.nav-list
+                li.nav-header about me
+                 p 23 year old programmer from Izola. You can find more about me on 
+                 a(href='http://www.linkedin.com/profile/view?id=194929649&trk=nav_responsive_tab_profile_pic') Linkedin 
+                li.nav-header categories
+                - each cat in categoryList
+                  li
+                    a(href=categoryUrl(cat)) #{cat}
+                li.nav-header tags
+                - each tag in tagList
+                  li
+                    a(href=tagUrl(tag)) #{tag}
