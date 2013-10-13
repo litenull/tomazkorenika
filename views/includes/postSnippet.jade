@@ -5,6 +5,7 @@ div.post
   span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
   div.post.content
     != post.content
+  br(style="clear:both")
   div.tags
     - each tag in post.tags
       a(href=tagUrl(tag))
