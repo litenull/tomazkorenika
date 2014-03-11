@@ -1,9 +1,0 @@
-extends layout
-
-block content
-  - var categoryList = getCategories()
-  - var tagList = getTags()
-  h3
-    a(href=categoryUrl(category)) posts in category * #{category}
-  - each post in posts
-    include includes/postSnippet
