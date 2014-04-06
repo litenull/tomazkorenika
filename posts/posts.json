@@ -1,14 +1,15 @@
-[{
-  "id": 1,
-  "title": "Aerobix",
-  "date": "2014-04-06",
-  "tags": ["music", "beat"],
-  "file": "april-6-2014.md"
-},
+[
 {
-  "id": 3,
+  "id": 1,
   "title": "Code example",
   "date": "2014-04-06",
   "tags": ["programming", "javascript"],
   "file": "april-7-2014.md"
+},
+{
+  "id": 2,
+  "title": "Aerobix",
+  "date": "2014-04-06",
+  "tags": ["music", "beat"],
+  "file": "april-6-2014.md"
 }]
