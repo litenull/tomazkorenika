@@ -28,7 +28,7 @@ var blog = {
 				callback(null);
 			});
 		});
-	},
+	}
 }
 
 hljs.initHighlightingOnLoad();
