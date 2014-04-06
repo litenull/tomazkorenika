@@ -1,0 +1,21 @@
+[{
+  "id": 1,
+  "title": "Aerobix",
+  "date": "2014-03-06",
+  "tags": ["music", "beat"],
+  "file": "april-6-2014.md"
+},
+{
+  "id": 2,
+  "title": "Wilfred Giroux ft. AlunaGeorge",
+  "date": "2014-03-05",
+  "tags": ["music", "beat", "cool"],
+  "file": "april-6-2014-2.md"
+},
+{
+  "id": 3,
+  "title": "Code example",
+  "date": "2014-03-05",
+  "tags": ["programming", "javascript"],
+  "file": "april-7-2014.md"
+}]

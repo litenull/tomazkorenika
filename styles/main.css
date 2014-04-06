@@ -1,0 +1,33 @@
+html {
+  font: 16px Helvetica, arial, freesans, clean, sans-serif !important;
+}
+
+.posts {
+  width:60%;
+  margin:0 auto;
+}
+
+.tag {
+  	background-color:#9DD1E2;
+  	text-align:center;
+  	float:left;
+	border-radius: 8px;
+	margin: 2px;
+	padding: 4px;
+	font-size: 13px;
+}
+
+.sidebar {
+	float:left;
+	width:257px;
+}
+
+a {
+	color: #008cba;
+	text-decoration: none;
+	line-height: inherit;
+}
+
+a:hover {
+	color: #0078a0;
+}

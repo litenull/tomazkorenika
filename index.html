@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tomaz.io</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/highlight-styles/default.css">
+    <script src="vendor/jquery.js"></script>
     <style>
       /* mini reset */
       html, body, div, span, p, img {
@@ -37,27 +38,39 @@
     </style>
   </head>
   <body>
-    <div class="image-wrapper">
-      <div class="row">
-        <div class="small-6 large-centered columns" style="text-align:center">
-          <h2> tomaz korenika </h2>
-          <h3> i like software. node.js / javascript / html5 / phonegap / php </h3>
-          <h3> <strong> <a href="http://github.org/litenull"> github </a> </strong> </h3>
-          <h3> <strong> <a href="portfolio.html"> portfolio </a> </strong> </h3>
-          <h3> <strong> <a href="mailto:me@tomazkorenika.com">ping</a> </strong> </h3>
-          <h3> <strong> <a href="https://www.gittip.com/litenull/"> coffee </a> </strong> </h3>
-        </div>
+    <div class="main-wrapper">
+      <div class="sidebar">
+        tomaz.io <br />
+        
+        <div style="font-size:12px">
+          i like software. node.js / javascript / html5 / phonegap / php
+        </div> <br />
+
+        <strong> <a href="http://github.org/litenull"> github </a> </strong> <br />
+        <strong> <a href="portfolio.html"> portfolio </a> </strong> <br />
+        <strong> <a href="mailto:me@tomazkorenika.com">ping</a> </strong> <br />
+        <strong> <a href="https://www.gittip.com/litenull/"> coffee </a> </strong>
+
+        <br />
+        <br />
+        tags
+        <br />  
+        <a href="#/tags/programming">programming</a>
+        <br />
+        <a href="#/tags/music">music</a>
+        <br />
+        <br />
+      </div>
+      <div class="posts">
       </div>
     </div>
+
+    <script src="vendor/handlebars.js"></script>
+    <script src="vendor/async.js"></script>
+    <script src="vendor/underscore.js"></script>
+    <script src="vendor/js-markdown-extra.js"></script>
+    <script src="vendor/highlight.pack.js"></script>
+    <script src="scripts/main.js"></script>
     
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/jquery.adaptive-backgrounds.js"></script>
-    <script>
-      $(document).foundation();
-      $(document).ready(function() {
-        $.adaptiveBackground.run();
-      })
-    </script>
   </body>
 </html>
